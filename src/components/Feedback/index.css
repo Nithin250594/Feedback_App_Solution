@@ -1,0 +1,105 @@
+/* Write your CSS code here. */
+.feedback-bg {
+  background-image: linear-gradient(to right, #ffeeee, #ffc0bb);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 70%;
+  min-width: 500px;
+  max-width: 700px;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.feedback-title {
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .feedback-container {
+    width: 80vw;
+    height: 50vh;
+  }
+  .feedback-title {
+    font-size: 20px;
+    padding: 25px;
+  }
+  .emoji-size {
+    width: 10px;
+  }
+}
+
+.emojis-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 0px;
+}
+
+.emoji-size {
+  width: 70px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .emoji-size {
+    width: 50px;
+  }
+}
+
+.emoji-name {
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-weight: 500;
+  text-align: center;
+}
+
+.thankyou-text {
+  font-size: 21px;
+  font-family: 'Roboto';
+  color: #0f172a;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.thankyou-para {
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .thankyou-para {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thankyou-para {
+    font-size: 21px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
